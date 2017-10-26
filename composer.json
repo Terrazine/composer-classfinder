@@ -1,0 +1,31 @@
+{
+  "name": "terrazine/composer-classfinder",
+  "description": "Finder for classes autoloaded by composer.",
+  "type": "finder",
+  "license": "inherit",
+  "authors": [
+    {
+      "name": "Patrick 'Quezler' Mounier",
+      "email": "Quezler@me.com"
+    }
+  ],
+  "require": {
+    "laravel/framework": "5.*",
+    "terrazine/composer-classloader": "1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Terrazine\\ComposerClassFinder\\": "src/"
+    }
+  },
+  "extra": {
+    "terrazine": {
+      "human": "@see terrazine/slayn"
+    },
+    "laravel": {
+      "providers": [
+
+      ]
+    }
+  }
+}
